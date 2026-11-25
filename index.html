@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>色彩灵感_带颜色的网站_设计师配色视频社区</title>
+<meta name="description" content="色彩灵感官方网站是专注色彩与视觉设计的视频内容平台，汇聚带颜色的网站案例、配色教程与创作者访谈，为设计师提供高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a24'/%3E%3Ccircle cx='22' cy='24' r='10' fill='%23ff5c7a'/%3E%3Ccircle cx='42' cy='24' r='10' fill='%2334e0b0'/%3E%3Ccircle cx='32' cy='42' r='10' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --clr-bg:#10141b;
+  --clr-bg-soft:#171d27;
+  --clr-panel:#1c2330;
+  --clr-panel-2:#222b3a;
+  --clr-line:#2c3647;
+  --clr-text:#e8edf5;
+  --clr-text-dim:#9aa7bb;
+  --clr-pink:#ff5c7a;
+  --clr-mint:#34e0b0;
+  --clr-amber:#ffd166;
+  --clr-violet:#a78bfa;
+  --clr-cyan:#5ac8fa;
+  --clr-radius:16px;
+  --shadow-soft:0 18px 40px rgba(0,0,0,.35);
+  --font-main:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:var(--font-main);
+  background:var(--clr-bg);
+  color:var(--clr-text);
+  line-height:1.75;
+  font-size:16px;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul,ol{list-style:none;}
+.clr-container{width:min(1180px,92vw);margin:0 auto;}
+.clr-section{padding:64px 0;scroll-margin-top:120px;}
+.clr-section-head{margin-bottom:36px;}
+.clr-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--clr-mint);font-weight:600;margin-bottom:10px;
+}
+.clr-eyebrow::before{content:"";width:22px;height:2px;background:var(--clr-mint);border-radius:2px;}
+.clr-h2{
+  font-size:clamp(1.5rem,1.1rem + 2vw,2.2rem);
+  line-height:1.3;font-weight:800;letter-spacing:-.01em;
+}
+.clr-h2 em{font-style:normal;color:var(--clr-pink);}
+.clr-h2 .clr-grad{
+  background:linear-gradient(100deg,var(--clr-mint),var(--clr-cyan) 55%,var(--clr-violet));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.clr-h3{font-size:1.06rem;font-weight:700;line-height:1.45;margin-bottom:8px;}
+.clr-sub{color:var(--clr-text-dim);font-size:.94rem;max-width:66ch;}
+.clr-sticky-wrap{position:sticky;top:0;z-index:80;}
+/* ============ 公告条 ============ */
+.clr-announce{
+  background:linear-gradient(90deg,#1b2230,#232c3d 40%,#1b2230);
+  border-bottom:1px solid var(--clr-line);
+  font-size:.82rem;
+}
+.clr-announce-inner{
+  width:min(1180px,92vw);margin:0 auto;
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;overflow:hidden;
+}
+.clr-announce-tag{
+  flex:0 0 auto;background:var(--clr-pink);color:#fff;
+  font-weight:700;font-size:.7rem;letter-spacing:.08em;
+  padding:2px 9px;border-radius:999px;
+}
+.clr-announce-track{
+  display:flex;gap:36px;white-space:nowrap;
+  color:#dbe4f1;animation:clr-marquee 26s linear infinite;
+}
+.clr-announce-track:hover{animation-play-state:paused;}
+@keyframes clr-marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.clr-announce-track span::before{content:"◆";color:var(--clr-amber);font-size:.6rem;margin-right:10px;vertical-align:2px;}
+/* ============ 页头 ============ */
+.clr-header{
+  background:rgba(16,20,27,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--clr-line);
+}
+.clr-header-inner{
+  width:min(1180px,92vw);margin:0 auto;
+  display:flex;align-items:center;gap:26px;
+  min-height:64px;
+}
+.clr-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.clr-logo-mark{width:34px;height:34px;border-radius:10px;overflow:hidden;flex:0 0 auto;}
+.clr-logo-text{font-weight:800;font-size:1.06rem;letter-spacing:.02em;}
+.clr-logo-text small{display:block;font-size:.62rem;font-weight:500;letter-spacing:.22em;color:var(--clr-text-dim);}
+.clr-nav{display:flex;gap:4px;margin-left:auto;}
+.clr-nav a{
+  font-size:.88rem;padding:8px 13px;border-radius:999px;
+  color:var(--clr-text-dim);transition:.2s;white-space:nowrap;
+}
+.clr-nav a:hover,.clr-nav a:focus-visible{color:var(--clr-text);background:var(--clr-panel-2);outline:none;}
+.clr-header-tools{display:flex;align-items:center;gap:10px;}
+.clr-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--clr-panel);border:1px solid var(--clr-line);
+  border-radius:999px;padding:6px 12px;transition:.2s;
+}
+.clr-search:focus-within{border-color:var(--clr-cyan);box-shadow:0 0 0 3px rgba(90,200,250,.15);}
+.clr-search input{
+  background:none;border:none;outline:none;color:var(--clr-text);
+  font-size:.84rem;width:150px;
+}
+.clr-search input::placeholder{color:#66738a;}
+.clr-search-icon{color:var(--clr-text-dim);font-size:.9rem;}
+.clr-search-feedback{
+  font-size:.74rem;color:var(--clr-amber);
+  min-height:1em;margin-left:4px;
+}
+.clr-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  border-radius:999px;padding:9px 18px;font-size:.86rem;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.clr-btn:hover{transform:translateY(-1px);}
+.clr-btn-primary{
+  background:linear-gradient(120deg,var(--clr-pink),#ff8a5c);
+  color:#1a1016;box-shadow:0 8px 22px rgba(255,92,122,.32);
+}
+.clr-btn-primary:hover{box-shadow:0 12px 28px rgba(255,92,122,.45);}
+.clr-btn-ghost{
+  border:1px solid var(--clr-line);color:var(--clr-text);
+  background:var(--clr-panel);
+}
+.clr-btn-ghost:hover{border-color:var(--clr-mint);color:var(--clr-mint);}
+.clr-nav-toggle{
+  display:none;width:40px;height:40px;border-radius:10px;
+  border:1px solid var(--clr-line);background:var(--clr-panel);
+  align-items:center;justify-content:center;flex-direction:column;gap:4px;
+}
+.clr-nav-toggle span{display:block;width:17px;height:2px;background:var(--clr-text);border-radius:2px;transition:.25s;}
+.clr-nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.clr-nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.clr-nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+.clr-mobile-nav{display:none;}
+.clr-mobile-nav.open{display:block;}
+.clr-mobile-nav a{
+  display:block;padding:12px 4px;border-bottom:1px solid var(--clr-line);
+  font-size:.95rem;color:var(--clr-text-dim);
+}
+.clr-mobile-nav a:last-child{border-bottom:none;}
+/* ============ 首屏 ============ */
+.clr-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -8%,rgba(167,139,250,.20),transparent 62%),
+    radial-gradient(720px 380px at 8% 108%,rgba(52,224,176,.14),transparent 60%),
+    var(--clr-bg-soft);
+  border-bottom:1px solid var(--clr-line);
+  padding:58px 0 68px;
+}
+.clr-hero-grid{
+  display:grid;grid-template-columns:6fr 4fr;gap:48px;align-items:center;
+}
+.clr-hero-copy{min-width:0;}
+.clr-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid rgba(52,224,176,.4);
+  background:rgba(52,224,176,.08);
+  color:var(--clr-mint);font-size:.78rem;font-weight:600;
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.clr-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--clr-mint);box-shadow:0 0 10px var(--clr-mint);}
+.clr-h1{
+  font-size:clamp(2rem,1.2rem + 3.6vw,3.4rem);
+  line-height:1.16;font-weight:900;letter-spacing:-.02em;
+  margin-bottom:20px;
+}
+.clr-h1 .clr-h1-hl{
+  background:linear-gradient(100deg,var(--clr-pink),var(--clr-amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.clr-hero-lead{
+  color:#c3cee0;font-size:1rem;max-width:56ch;margin-bottom:22px;
+}
+.clr-hero-lead strong{color:var(--clr-amber);font-weight:700;}
+.clr-hero-intro{
+  border-left:3px solid var(--clr-violet);
+  padding:2px 0 2px 16px;
+  color:var(--clr-text-dim);font-size:.92rem;
+  margin-bottom:28px;max-width:58ch;
+}
+.clr-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;}
+.clr-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;max-width:520px;
+}
+.clr-stat{
+  background:rgba(28,35,48,.75);
+  border:1px solid var(--clr-line);
+  border-radius:12px;padding:12px 14px;
+}
+.clr-stat b{
+  display:block;font-size:1.35rem;font-weight:800;line-height:1.2;
+  background:linear-gradient(100deg,var(--clr-cyan),var(--clr-mint));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.clr-stat span{font-size:.74rem;color:var(--clr-text-dim);letter-spacing:.04em;}
+.clr-hero-visual{position:relative;min-width:0;}
+.clr-hero-figure{
+  border-radius:22px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.09);
+  box-shadow:var(--shadow-soft);
+  aspect-ratio:4/4.5;
+  background:#0c1017;
+}
+.clr-hero-figure svg{width:100%;height:100%;}
+.clr-hero-float{
+  position:absolute;left:-14px;bottom:20px;
+  background:rgba(23,29,39,.94);
+  border:1px solid var(--clr-line);
+  border-radius:14px;padding:12px 16px;
+  box-shadow:var(--shadow-soft);
+  backdrop-filter:blur(8px);
+  max-width:240px;
+}
+.clr-hero-float b{display:block;font-size:.86rem;color:var(--clr-amber);margin-bottom:2px;}
+.clr-hero-float span{font-size:.74rem;color:var(--clr-text-dim);line-height:1.5;display:block;}
+.clr-hero-swatches{
+  position:absolute;right:-10px;top:18px;
+  display:flex;flex-direction:column;gap:7px;
+}
+.clr-hero-swatches i{
+  width:16px;height:16px;border-radius:50%;
+  box-shadow:0 0 0 3px rgba(16,20,27,.85),0 0 16px rgba(255,255,255,.12);
+}
+/* ============ 通用卡片 ============ */
+.clr-card{
+  background:var(--clr-panel);
+  border:1px solid var(--clr-line);
+  border-radius:var(--clr-radius);
+  padding:22px;
+  transition:transform .2s,border-color .2s,box-shadow .2s;
+}
+.clr-card:hover{transform:translateY(-3px);border-color:#3a465c;box-shadow:0 16px 32px rgba(0,0,0,.3);}
+.clr-tag{
+  display:inline-block;font-size:.68rem;font-weight:600;
+  padding:2px 9px;border-radius:999px;
+  background:rgba(90,200,250,.12);color:var(--clr-cyan);
+  letter-spacing:.03em;
+}
+.clr-tag--mint{background:rgba(52,224,176,.12);color:var(--clr-mint);}
+.clr-tag--amber{background:rgba(255,209,102,.13);color:var(--clr-amber);}
+.clr-tag--pink{background:rgba(255,92,122,.14);color:var(--clr-pink);}
+.clr-tag--violet{background:rgba(167,139,250,.15);color:var(--clr-violet);}
+.clr-meta{
+  display:flex;flex-wrap:wrap;gap:12px;
+  font-size:.76rem;color:var(--clr-text-dim);
+}
+.clr-meta b{color:#cfd9e8;font-weight:600;}
+.clr-actions-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.clr-mini-btn{
+  font-size:.75rem;padding:5px 11px;border-radius:999px;
+  border:1px solid var(--clr-line);color:var(--clr-text-dim);
+  transition:.18s;display:inline-flex;align-items:center;gap:5px;
+}
+.clr-mini-btn:hover{color:var(--clr-text);border-color:#435069;background:var(--clr-panel-2);}
+.clr-mini-btn.is-active{color:var(--clr-pink);border-color:rgba(255,92,122,.55);background:rgba(255,92,122,.1);}
+.clr-mini-btn.is-saved{color:var(--clr-amber);border-color:rgba(255,209,102,.5);background:rgba(255,209,102,.1);}
+/* ============ 视频流 ============ */
+.clr-video-feature{
+  display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);
+  gap:26px;align-items:stretch;margin-bottom:26px;
+}
+.clr-cover{
+  border-radius:14px;overflow:hidden;background:#0c1017;
+  border:1px solid var(--clr-line);
+  aspect-ratio:16/9;
+}
+.clr-cover svg{width:100%;height:100%;}
+.clr-video-feature-body{display:flex;flex-direction:column;gap:12px;justify-content:center;}
+.clr-video-list{display:grid;grid-template-columns:1fr;gap:14px;}
+.clr-video-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:18px;align-items:center;
+  padding:18px 20px;border-radius:14px;
+  background:var(--clr-panel);border:1px solid var(--clr-line);
+  transition:.2s;
+}
+.clr-video-item:hover{border-color:#3d4a60;background:var(--clr-panel-2);}
+.clr-video-item-main{min-width:0;}
+.clr-video-title{font-size:.98rem;font-weight:700;margin-bottom:5px;line-height:1.45;}
+.clr-video-desc{font-size:.83rem;color:var(--clr-text-dim);margin-bottom:9px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.clr-video-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.clr-video-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+.clr-video-side .clr-mini-btn{white-space:nowrap;}
+/* ============ 专题 ============ */
+.clr-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.clr-topic{
+  background:linear-gradient(160deg,var(--clr-panel-2),var(--clr-panel));
+  border:1px solid var(--clr-line);border-radius:var(--clr-radius);
+  padding:24px;display:flex;flex-direction:column;gap:12px;
+  position:relative;overflow:hidden;
+}
+.clr-topic::after{
+  content:"";position:absolute;right:-30px;top:-30px;
+  width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,209,102,.16),transparent 70%);
+}
+.clr-topic:nth-child(2)::after{background:radial-gradient(circle,rgba(52,224,176,.16),transparent 70%);}
+.clr-topic:nth-child(3)::after{background:radial-gradient(circle,rgba(167,139,250,.18),transparent 70%);}
+.clr-topic-status{font-size:.72rem;color:var(--clr-mint);font-weight:600;letter-spacing:.04em;}
+.clr-topic ul{display:flex;flex-direction:column;gap:8px;margin-top:2px;}
+.clr-topic li{font-size:.84rem;color:var(--clr-text-dim);display:flex;gap:8px;line-height:1.55;}
+.clr-topic li::before{content:"›";color:var(--clr-amber);font-weight:700;flex:0 0 auto;}
+/* ============ 作者矩阵 ============ */
+.clr-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.clr-author{
+  display:grid;grid-template-columns:auto minmax(0,1fr);
+  gap:16px;align-items:start;
+  background:var(--clr-panel);border:1px solid var(--clr-line);
+  border-radius:var(--clr-radius);padding:20px;
+  transition:.2s;
+}
+.clr-author:hover{border-color:#3d4a60;transform:translateY(-2px);}
+.clr-avatar{
+  width:56px;height:56px;border-radius:50%;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:1.1rem;color:#10141b;
+  border:2px solid rgba(255,255,255,.14);
+}
+.clr-author-name{font-size:1rem;font-weight:700;margin-bottom:2px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.clr-author-field{font-size:.76rem;color:var(--clr-cyan);margin-bottom:7px;}
+.clr-author-bio{font-size:.82rem;color:var(--clr-text-dim);line-height:1.65;}
+.clr-author-nums{display:flex;gap:14px;font-size:.72rem;color:var(--clr-text-dim);margin-top:8px;}
+.clr-author-nums b{color:var(--clr-text);font-weight:600;}
+/* ============ 评价 ============ */
+.clr-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.clr-comment{
+  background:var(--clr-bg-soft);border:1px solid var(--clr-line);
+  border-radius:14px;padding:18px 20px;
+}
+.clr-comment:nth-child(3n+1){border-left:3px solid var(--clr-pink);}
+.clr-comment:nth-child(3n+2){border-left:3px solid var(--clr-mint);}
+.clr-comment:nth-child(3n+3){border-left:3px solid var(--clr-amber);}
+.clr-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.clr-comment-avatar{
+  width:34px;height:34px;border-radius:50%;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.8rem;color:#10141b;
+}
+.clr-comment-name{font-size:.84rem;font-weight:600;}
+.clr-comment-time{font-size:.7rem;color:#66738a;}
+.clr-comment-text{font-size:.86rem;color:#c3cee0;line-height:1.7;}
+.clr-comment-stars{color:var(--clr-amber);font-size:.74rem;letter-spacing:2px;margin-top:8px;}
+/* ============ FAQ ============ */
+.clr-faq{display:flex;flex-direction:column;gap:10px;}
+.clr-faq details{
+  background:var(--clr-panel);border:1px solid var(--clr-line);
+  border-radius:12px;padding:0 18px;transition:.2s;
+}
+.clr-faq details[open]{border-color:rgba(52,224,176,.45);background:var(--clr-panel-2);}
+.clr-faq summary{
+  cursor:pointer;list-style:none;font-size:.92rem;font-weight:600;
+  padding:15px 26px 15px 0;position:relative;
+}
+.clr-faq summary::-webkit-details-marker{display:none;}
+.clr-faq summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:1.15rem;color:var(--clr-mint);font-weight:400;
+}
+.clr-faq details[open] summary::after{content:"–";}
+.clr-faq p{font-size:.85rem;color:var(--clr-text-dim);padding:0 0 16px;line-height:1.7;}
+/* ============ 深度解析 ============ */
+.clr-essay{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.82fr);
+  gap:36px;align-items:start;
+}
+.clr-essay-body p{font-size:.92rem;color:#c3cee0;margin-bottom:14px;line-height:1.85;}
+.clr-essay-body p strong{color:var(--clr-amber);font-weight:700;}
+.clr-essay-aside{
+  background:linear-gradient(165deg,rgba(167,139,250,.16),rgba(23,29,39,.4));
+  border:1px solid var(--clr-line);border-radius:var(--clr-radius);
+  padding:24px;
+}
+.clr-essay-aside h3{font-size:.94rem;margin-bottom:14px;color:var(--clr-violet);letter-spacing:.04em;}
+.clr-essay-aside li{font-size:.84rem;color:var(--clr-text-dim);padding:9px 0;border-bottom:1px dashed var(--clr-line);line-height:1.6;}
+.clr-essay-aside li:last-child{border-bottom:none;}
+.clr-essay-aside li b{color:var(--clr-text);}
+/* ============ 合作 / 联系 ============ */
+.clr-partners{display:flex;flex-wrap:wrap;gap:12px;}
+.clr-partner{
+  flex:1 1 150px;min-width:140px;
+  background:var(--clr-panel);border:1px solid var(--clr-line);
+  border-radius:12px;padding:16px 18px;
+  display:flex;flex-direction:column;gap:4px;
+  transition:.2s;
+}
+.clr-partner:hover{border-color:var(--clr-cyan);}
+.clr-partner b{font-size:.88rem;}
+.clr-partner span{font-size:.72rem;color:var(--clr-text-dim);}
+.clr-contact-bar{
+  margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  justify-content:space-between;background:var(--clr-panel);
+  border:1px solid var(--clr-line);border-radius:14px;padding:20px 24px;
+}
+/* ============ 页脚 ============ */
+.clr-footer{
+  border-top:1px solid var(--clr-line);
+  background:#0c1017;padding:52px 0 30px;margin-top:20px;
+}
+.clr-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px;}
+.clr-footer-brand p{font-size:.82rem;color:var(--clr-text-dim);margin-top:12px;max-width:32ch;line-height:1.7;}
+.clr-footer h4{font-size:.84rem;margin-bottom:14px;color:#cfd9e8;letter-spacing:.05em;}
+.clr-footer ul li{font-size:.8rem;color:var(--clr-text-dim);padding:5px 0;}
+.clr-footer ul li a:hover{color:var(--clr-mint);}
+.clr-footer-bottom{
+  border-top:1px solid var(--clr-line);padding-top:20px;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:.74rem;color:#66738a;
+}
+/* ============ 浮动按钮 / Toast / 弹窗 ============ */
+.clr-to-top{
+  position:fixed;right:22px;bottom:26px;z-index:90;
+  width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(140deg,var(--clr-pink),var(--clr-violet));
+  color:#160d14;font-size:1.1rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 26px rgba(255,92,122,.4);
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.clr-to-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.clr-to-top:not(.show){transform:translateY(10px);}
+.clr-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#263041;color:#edf2fa;border:1px solid #3a465c;
+  padding:11px 22px;border-radius:999px;font-size:.84rem;
+  box-shadow:var(--shadow-soft);opacity:0;pointer-events:none;
+  transition:.28s;z-index:120;white-space:nowrap;
+}
+.clr-toast.show{opacity:1;transform:translate(-50%,0);}
+.clr-modal-mask{
+  position:fixed;inset:0;background:rgba(6,9,14,.72);
+  backdrop-filter:blur(4px);z-index:110;
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:.22s;
+}
+.clr-modal-mask.open{opacity:1;pointer-events:auto;}
+.clr-modal{
+  background:var(--clr-bg-soft);border:1px solid var(--clr-line);
+  border-radius:18px;padding:28px;width:min(520px,100%);
+  box-shadow:var(--shadow-soft);position:relative;
+  transform:translateY(12px);transition:.25s;
+  max-height:86vh;overflow:auto;
+}
+.clr-modal-mask.open .clr-modal{transform:translateY(0);}
+.clr-modal h3{font-size:1.1rem;margin-bottom:10px;padding-right:30px;}
+.clr-modal p{font-size:.86rem;color:var(--clr-text-dim);line-height:1.75;margin-bottom:14px;}
+.clr-modal label{display:block;font-size:.8rem;color:var(--clr-text-dim);margin-bottom:6px;}
+.clr-modal input,.clr-modal textarea{
+  width:100%;background:var(--clr-panel);border:1px solid var(--clr-line);
+  border-radius:10px;padding:10px 13px;color:var(--clr-text);
+  font-family:inherit;font-size:.86rem;outline:none;margin-bottom:14px;
+}
+.clr-modal input:focus,.clr-modal textarea:focus{border-color:var(--clr-cyan);}
+.clr-modal-close{
+  position:absolute;right:16px;top:14px;width:32px;height:32px;
+  border-radius:50%;background:var(--clr-panel-2);color:var(--clr-text-dim);
+  font-size:1rem;display:flex;align-items:center;justify-content:center;
+}
+.clr-modal-close:hover{color:var(--clr-text);}
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .clr-hero-grid{grid-template-columns:1fr;gap:36px;}
+  .clr-hero-figure{aspect-ratio:16/10;max-width:560px;}
+  .clr-topics{grid-template-columns:1fr 1fr;}
+  .clr-essay{grid-template-columns:1fr;}
+  .clr-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:860px){
+  .clr-nav{display:none;}
+  .clr-nav-toggle{display:flex;}
+  .clr-search{display:none;}
+  .clr-video-feature{grid-template-columns:1fr;}
+  .clr-authors{grid-template-columns:1fr;}
+  .clr-comments{grid-template-columns:1fr;}
+  .clr-topics{grid-template-columns:1fr;}
+  .clr-section{padding:48px 0;}
+}
+@media (max-width:640px){
+  .clr-hero{padding:40px 0 52px;}
+  .clr-hero-stats{grid-template-columns:1fr 1fr;}
+  .clr-video-item{grid-template-columns:1fr;gap:12px;}
+  .clr-video-side{flex-direction:row;flex-wrap:wrap;align-items:center;}
+  .clr-footer-grid{grid-template-columns:1fr;}
+  .clr-hero-float{left:8px;bottom:10px;max-width:200px;}
+  .clr-hero-swatches{display:none;}
+  .clr-announce-track{animation-duration:34s;}
+  .clr-contact-bar{flex-direction:column;align-items:flex-start;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .clr-announce-track{animation:none;}
+  *{transition:none!important;animation:none!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ========== 吸顶区：公告条 + 页头 ========== -->
+<div class="clr-sticky-wrap">
+  <div class="clr-announce" aria-label="站内最新公告">
+    <div class="clr-announce-inner">
+      <span class="clr-announce-tag">官方发布</span>
+      <div class="clr-announce-track">
+        <span>「带颜色的网站·第 12 期」专题上线，新增 8 组高饱和配色案例</span>
+        <span>色彩解析长文《从霓虹到低饱和》更新至 3.2 万字</span>
+        <span>创作者「阿霓」入驻，首发配色拆解合集可免费下载</span>
+        <span>11 月配色挑战赛报名中，投稿通道开放至 11 月 30 日</span>
+        <span>「带颜色的网站·第 12 期」专题上线，新增 8 组高饱和配色案例</span>
+        <span>色彩解析长文《从霓虹到低饱和》更新至 3.2 万字</span>
+        <span>创作者「阿霓」入驻，首发配色拆解合集可免费下载</span>
+        <span>11 月配色挑战赛报名中，投稿通道开放至 11 月 30 日</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="clr-header">
+    <div class="clr-header-inner">
+      <a class="clr-logo" href="#clr-hero" aria-label="色彩灵感官网首页">
+        <span class="clr-logo-mark">
+          <svg viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="色彩灵感品牌标识">
+            <rect width="64" height="64" rx="14" fill="#151a24"/>
+            <circle cx="22" cy="24" r="10" fill="#ff5c7a"/>
+            <circle cx="42" cy="24" r="10" fill="#34e0b0"/>
+            <circle cx="32" cy="42" r="10" fill="#ffd166"/>
+          </svg>
+        </span>
+        <span class="clr-logo-text">色彩灵感<small>COLOR INSPIRE</small></span>
+      </a>
+      <nav class="clr-nav" aria-label="主导航">
+        <a href="#clr-hero">首页</a>
+        <a href="#clr-videos">视频</a>
+        <a href="#clr-topics">专题企划</a>
+        <a href="#clr-authors">创作者</a>
+        <a href="#clr-essay">深度解析</a>
+        <a href="#clr-comments">口碑</a>
+        <a href="#clr-faq">帮助</a>
+      </nav>
+      <div class="clr-header-tools">
+        <div class="clr-search" role="search">
+          <span class="clr-search-icon" aria-hidden="true">⌕</span>
+          <input id="clr-search-input" type="search" placeholder="搜索带颜色的网站 / 配色" aria-label="站内搜索">
+        </div>
+        <button class="clr-btn clr-btn-primary" id="clr-submit-open" type="button">投稿</button>
+        <button class="clr-nav-toggle" id="clr-nav-toggle" type="button" aria-expanded="false" aria-controls="clr-mobile-nav" aria-label="展开导航菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="clr-mobile-nav" id="clr-mobile-nav">
+      <div class="clr-container">
+        <a href="#clr-hero">首页</a>
+        <a href="#clr-videos">视频</a>
+        <a href="#clr-topics">专题企划</a>
+        <a href="#clr-authors">创作者</a>
+        <a href="#clr-essay">深度解析</a>
+        <a href="#clr-comments">口碑</a>
+        <a href="#clr-faq">帮助</a>
+        <a href="#clr-contact">联系投稿</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- ========== S2 首屏 ========== -->
+  <section class="clr-hero" id="clr-hero" aria-labelledby="clr-h1-title">
+    <div class="clr-container clr-hero-grid">
+      <div class="clr-hero-copy">
+        <span class="clr-hero-badge"><i></i>色彩灵感 · 官方网站 · 持续运营中</span>
+        <h1 class="clr-h1" id="clr-h1-title">色彩灵感<span class="clr-h1-hl">带颜色的网站</span>视频品牌官网</h1>
+        <p class="clr-hero-lead">作为国内领先的<strong>色彩与视觉设计视频平台</strong>，我们以原创、高清的专业内容，持续推荐<strong>带颜色的网站</strong>案例，为设计师、品牌方与创作者搭建值得信赖的内容生态。</p>
+        <p class="clr-hero-intro">色彩灵感深耕配色垂直领域，聚合带颜色的网站拆解、品牌视觉企划、创作者访谈与真实项目幕后。从霓虹色谱到低饱和留白，每一个案例都配有可复用的色值与设计逻辑，陪伴你从灵感走向落地。</p>
+        <div class="clr-hero-actions">
+          <a class="clr-btn clr-btn-primary" href="#clr-videos">观看本期视频</a>
+          <a class="clr-btn clr-btn-ghost" href="#clr-topics">进入专题企划</a>
+          <a class="clr-btn clr-btn-ghost" href="#clr-authors">认识创作者</a>
+        </div>
+        <div class="clr-hero-stats" aria-label="平台核心数据">
+          <div class="clr-stat"><b>186</b><span>带颜色的网站案例库</span></div>
+          <div class="clr-stat"><b>42</b><span>签约与入驻创作者</span></div>
+          <div class="clr-stat"><b>320万</b><span>累计视频播放</span></div>
+        </div>
+      </div>
+      <div class="clr-hero-visual">
+        <figure class="clr-hero-figure">
+          <svg viewBox="0 0 400 450" role="img" aria-label="色彩灵感官网首屏主视觉：多色块构成的城市浏览器窗口插画">
+            <defs>
+              <linearGradient id="clr-hero-g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff5c7a"/><stop offset="1" stop-color="#ffd166"/>
+              </linearGradient>
+              <linearGradient id="clr-hero-g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#34e0b0"/><stop offset="1" stop-color="#5ac8fa"/>
+              </linearGradient>
+              <linearGradient id="clr-hero-g3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#ff5c7a"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="450" fill="#0c1017"/>
+            <circle cx="310" cy="82" r="130" fill="url(#clr-hero-g3)" opacity="0.28"/>
+            <circle cx="78" cy="356" r="150" fill="url(#clr-hero-g2)" opacity="0.22"/>
+            <rect x="46" y="64" width="308" height="240" rx="14" fill="#141a24" stroke="#2c3647"/>
+            <rect x="46" y="64" width="308" height="30" rx="14" fill="#1c2330"/>
+            <circle cx="66" cy="79" r="4" fill="#ff5c7a"/>
+            <circle cx="81" cy="79" r="4" fill="#ffd166"/>
+            <circle cx="96" cy="79" r="4" fill="#34e0b0"/>
+            <rect x="68" y="112" width="122" height="12" rx="6" fill="#3b475c"/>
+            <rect x="68" y="136" width="200" height="8" rx="4" fill="#2c3647"/>
+            <rect x="68" y="152" width="168" height="8" rx="4" fill="#2c3647"/>
+            <rect x="68" y="182" width="94" height="66" rx="10" fill="url(#clr-hero-g1)"/>
+            <rect x="174" y="182" width="94" height="66" rx="10" fill="url(#clr-hero-g2)"/>
+            <rect x="280" y="182" width="52" height="66" rx="10" fill="#a78bfa" opacity="0.85"/>
+            <rect x="68" y="264" width="160" height="8" rx="4" fill="#3b475c"/>
+            <rect x="48" y="330" width="130" height="76" rx="12" fill="#1c2330" stroke="#2c3647"/>
+            <circle cx="82" cy="362" r="14" fill="#ffd166"/>
+            <rect x="104" y="352" width="52" height="7" rx="3.5" fill="#3b475c"/>
+            <rect x="104" y="366" width="38" height="7" rx="3.5" fill="#2c3647"/>
+            <rect x="208" y="330" width="144" height="76" rx="12" fill="#1c2330" stroke="#2c3647"/>
+            <rect x="226" y="348" width="52" height="40" rx="8" fill="url(#clr-hero-g3)" opacity="0.9"/>
+            <rect x="290" y="352" width="46" height="7" rx="3.5" fill="#3b475c"/>
+            <rect x="290" y="366" width="36" height="7" rx="3.5" fill="#2c3647"/>
+            <rect x="290" y="380" width="42" height="7" rx="3.5" fill="#2c3647"/>
+          </svg>
+        </figure>
+        <div class="clr-hero-float">
+          <b>本周色卡 #FF5C7A</b>
+          <span>珊瑚粉 × 薄荷绿 × 暖琥珀，近期高点击组合</span>
+        </div>
+        <div class="clr-hero-swatches" aria-hidden="true">
+          <i style="background:#ff5c7a"></i>
+          <i style="background:#ffd166"></i>
+          <i style="background:#34e0b0"></i>
+          <i style="background:#5ac8fa"></i>
+          <i style="background:#a78bfa"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== S3 视频内容 ========== -->
+  <section class="clr-section" id="clr-videos" aria-labelledby="clr-videos-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Focus · 焦点视频</span>
+        <h2 class="clr-h2" id="clr-videos-title">本期焦点：<em>带颜色的网站</em>的六种表达方式</h2>
+        <p class="clr-sub">从高饱和撞色到渐变霓虹，我们把最近一周播放增长最快的带颜色的网站案例整理成视频清单，每一条都附上可复用的配色思路与色值参考。</p>
+      </div>
+
+      <div class="clr-video-feature">
+        <figure class="clr-cover">
+          <svg viewBox="0 0 560 315" role="img" aria-label="重点视频封面：深色背景上的珊瑚粉与薄荷绿几何拼贴">
+            <defs>
+              <linearGradient id="clr-vc1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff5c7a"/><stop offset="1" stop-color="#ff8a5c"/>
+              </linearGradient>
+              <linearGradient id="clr-vc2" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#34e0b0"/><stop offset="1" stop-color="#5ac8fa"/>
+              </linearGradient>
+            </defs>
+            <rect width="560" height="315" fill="#0f141c"/>
+            <rect x="0" y="0" width="330" height="315" fill="#161d28"/>
+            <circle cx="150" cy="120" r="86" fill="url(#clr-vc1)"/>
+            <circle cx="268" cy="196" r="66" fill="url(#clr-vc2)" opacity="0.92"/>
+            <rect x="352" y="44" width="168" height="228" rx="14" fill="#1c2330" stroke="#2c3647"/>
+            <rect x="372" y="66" width="94" height="9" rx="4.5" fill="#3b475c"/>
+            <rect x="372" y="86" width="128" height="7" rx="3.5" fill="#2c3647"/>
+            <rect x="372" y="108" width="60" height="52" rx="8" fill="#ffd166"/>
+            <rect x="440" y="108" width="60" height="52" rx="8" fill="#a78bfa"/>
+            <rect x="372" y="172" width="128" height="7" rx="3.5" fill="#2c3647"/>
+            <rect x="372" y="188" width="100" height="7" rx="3.5" fill="#2c3647"/>
+            <rect x="372" y="212" width="72" height="26" rx="13" fill="#34e0b0"/>
+            <polygon points="286,148 316,166 286,184" fill="#0f141c" opacity="0.85"/>
+          </svg>
+        </figure>
+        <div class="clr-video-feature-body">
+          <div class="clr-video-tags">
+            <span class="clr-tag clr-tag--pink">焦点推荐</span>
+            <span class="clr-tag clr-tag--mint">配色拆解</span>
+            <span class="clr-tag clr-tag--amber">高清正版</span>
+          </div>
+          <h3 class="clr-h3">6 个带颜色的网站，如何用一套色卡讲完品牌故事</h3>
+          <p class="clr-sub" style="font-size:.86rem;color:var(--clr-text-dim);">拆解六个真实上线的品牌站点：从首屏主色饱和度、按钮强调色到暗色模式的对比度处理，逐帧标注取色点位，并给出可直接导入设计工具的 JSON 色值文件。</p>
+          <div class="clr-meta">
+            <span>作者 <b>阿霓</b></span>
+            <span>播放 <b>12.8万</b></span>
+            <span>点赞 <b>6,402</b></span>
+            <span>收藏 <b>3,187</b></span>
+          </div>
+          <div class="clr-actions-row">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞 <span data-clr-count="6402">6402</span></button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="copy">⧉ 复制链接</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="comment">✎ 评论</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="clr-video-list" aria-label="热门视频条目列表">
+        <article class="clr-video-item">
+          <div class="clr-video-item-main">
+            <div class="clr-video-tags">
+              <span class="clr-tag clr-tag--violet">深度测评</span>
+              <span class="clr-tag clr-tag--mint">带颜色的网站</span>
+            </div>
+            <h3 class="clr-video-title">低饱和莫兰迪色网站，为什么越看越贵</h3>
+            <p class="clr-video-desc">选取六个家居与生活方式品牌站点，对比莫兰迪色系在留白、文字层级和商品图中的实际表现，并给出降低饱和度的三种安全区间。</p>
+            <div class="clr-meta"><span>作者 <b>灰调工作室</b></span><span>播放 <b>8.6万</b></span><span>点赞 <b>4,120</b></span><span>收藏 <b>2,530</b></span></div>
+          </div>
+          <div class="clr-video-side">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+          </div>
+        </article>
+
+        <article class="clr-video-item">
+          <div class="clr-video-item-main">
+            <div class="clr-video-tags">
+              <span class="clr-tag clr-tag--amber">教程干货</span>
+              <span class="clr-tag clr-tag--pink">渐变</span>
+            </div>
+            <h3 class="clr-video-title">渐变霓虹风网站落地指南：从色值到无障碍对比度</h3>
+            <p class="clr-video-desc">渐变好看但难用，我们用一个真实改版案例讲清楚：渐变方向、色标数量、正文可读性三个关键指标，附带对比度自检清单。</p>
+            <div class="clr-meta"><span>作者 <b>林三原</b></span><span>播放 <b>7.2万</b></span><span>点赞 <b>3,806</b></span><span>收藏 <b>2,114</b></span></div>
+          </div>
+          <div class="clr-video-side">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+          </div>
+        </article>
+
+        <article class="clr-video-item">
+          <div class="clr-video-item-main">
+            <div class="clr-video-tags">
+              <span class="clr-tag clr-tag--mint">人物访谈</span>
+              <span class="clr-tag clr-tag--amber">品牌故事</span>
+            </div>
+            <h3 class="clr-video-title">对话独立设计工作室：一套配色如何撑起一个品牌</h3>
+            <p class="clr-video-desc">从咖啡馆到独立唱片品牌，两位主理人聊了聊他们如何用三种颜色建立视觉记忆，以及为什么最终砍掉了原本最亮眼的荧光绿。</p>
+            <div class="clr-meta"><span>作者 <b>青提访谈</b></span><span>播放 <b>5.9万</b></span><span>点赞 <b>2,947</b></span><span>收藏 <b>1,602</b></span></div>
+          </div>
+          <div class="clr-video-side">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+          </div>
+        </article>
+
+        <article class="clr-video-item">
+          <div class="clr-video-item-main">
+            <div class="clr-video-tags">
+              <span class="clr-tag clr-tag--pink">城市探索</span>
+              <span class="clr-tag clr-tag--violet">在地文化</span>
+            </div>
+            <h3 class="clr-video-title">街头颜色采集：把城市招牌变成网站配色</h3>
+            <p class="clr-video-desc">我们带着取色器走了一条老街，记录招牌、瓷砖与遮阳棚的颜色，再将其重组成一套可用的网页色板，过程比想象中更有逻辑。</p>
+            <div class="clr-meta"><span>作者 <b>陆行光</b></span><span>播放 <b>4.7万</b></span><span>点赞 <b>2,315</b></span><span>收藏 <b>1,489</b></span></div>
+          </div>
+          <div class="clr-video-side">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+          </div>
+        </article>
+
+        <article class="clr-video-item">
+          <div class="clr-video-item-main">
+            <div class="clr-video-tags">
+              <span class="clr-tag clr-tag--amber">实用技巧</span>
+              <span class="clr-tag clr-tag--mint">可访问性</span>
+            </div>
+            <h3 class="clr-video-title">带颜色的网站也要讲可读性：五个对比度误区</h3>
+            <p class="clr-video-desc">彩色背景配白字并不总是安全。我们列出五个常见误区，并用真实页面截图演示如何在不牺牲品牌色的前提下提升可读性。</p>
+            <div class="clr-meta"><span>作者 <b>灰调工作室</b></span><span>播放 <b>4.1万</b></span><span>点赞 <b>1,984</b></span><span>收藏 <b>1,320</b></span></div>
+          </div>
+          <div class="clr-video-side">
+            <button class="clr-mini-btn" type="button" data-clr-action="like">♡ 点赞</button>
+            <button class="clr-mini-btn" type="button" data-clr-action="save">☆ 收藏</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== S4 专题企划 ========== -->
+  <section class="clr-section" id="clr-topics" aria-labelledby="clr-topics-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Series · 专题企划</span>
+        <h2 class="clr-h2" id="clr-topics-title">三组<em>带颜色的网站</em>长期专题</h2>
+        <p class="clr-sub">我们以专题形式持续运营内容生态，每个专题都有明确的更新节奏与创作者阵容，方便你按兴趣长期追更。</p>
+      </div>
+      <div class="clr-topics">
+        <article class="clr-topic">
+          <div class="clr-video-tags"><span class="clr-tag clr-tag--pink">专题 01</span><span class="clr-topic-status">更新中 · 每周三</span></div>
+          <h3 class="clr-h3">霓虹色谱 · 高饱和网站拆解</h3>
+          <p class="clr-sub" style="font-size:.84rem;">聚焦高饱和、撞色与渐变霓虹类站点，适合品牌视觉与活动页参考。目前已收录 28 个案例。</p>
+          <ul>
+            <li>撞色按钮在深色背景下的可读性实测</li>
+            <li>渐变主视觉的四个安全方向</li>
+            <li>高饱和色在小屏幕上的收缩策略</li>
+          </ul>
+          <button class="clr-mini-btn" type="button" data-clr-action="topic">查看专题目录</button>
+        </article>
+
+        <article class="clr-topic">
+          <div class="clr-video-tags"><span class="clr-tag clr-tag--mint">专题 02</span><span class="clr-topic-status">更新中 · 双周更新</span></div>
+          <h3 class="clr-h3">低饱和留白 · 克制的力量</h3>
+          <p class="clr-sub" style="font-size:.84rem;">面向生活方式、家居与阅读类品牌的配色参考，强调留白、层级与长期耐看度。</p>
+          <ul>
+            <li>莫兰迪色系在电商详情页的适配</li>
+            <li>米白与浅灰的三种进阶搭配</li>
+            <li>低饱和不等于低对比：文字层级方案</li>
+          </ul>
+          <button class="clr-mini-btn" type="button" data-clr-action="topic">查看专题目录</button>
+        </article>
+
+        <article class="clr-topic">
+          <div class="clr-video-tags"><span class="clr-tag clr-tag--violet">专题 03</span><span class="clr-topic-status">筹备中 · 12 月上线</span></div>
+          <h3 class="clr-h3">地域色彩 · 城市与品牌色</h3>
+          <p class="clr-sub" style="font-size:.84rem;">从城市招牌、建筑与自然景观中提取颜色，再转化为网站视觉方案，强调在地文化与真实感。</p>
+          <ul>
+            <li>老街招牌色采集与色板重组</li>
+            <li>海滨城市的蓝绿比例经验</li>
+            <li>把城市气质翻译成一套品牌色</li>
+          </ul>
+          <button class="clr-mini-btn" type="button" data-clr-action="topic">预约上线提醒</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== S5 创作者矩阵 ========== -->
+  <section class="clr-section" id="clr-authors" aria-labelledby="clr-authors-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Creators · 创作者</span>
+        <h2 class="clr-h2" id="clr-authors-title">持续输出<em>带颜色的网站</em>的创作者们</h2>
+        <p class="clr-sub">他们既是设计师，也是内容创作者。每一条视频背后都有真实的项目经验，这也是我们内容生态最重要的部分。</p>
+      </div>
+      <div class="clr-authors">
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#ff5c7a,#ffd166);">霓</span>
+          <div>
+            <div class="clr-author-name">阿霓 <span class="clr-tag clr-tag--pink">官方签约</span></div>
+            <div class="clr-author-field">擅长领域 · 品牌配色 / 渐变视觉</div>
+            <p class="clr-author-bio">色彩灵感官方签约创作者，前品牌设计主管，做过多套高饱和品牌站点改版。她的视频习惯把配色拆到色值和层级，擅长把“好看”讲成可执行的方法，更新稳定，口碑扎实。</p>
+            <div class="clr-author-nums"><span>作品 <b>68</b></span><span>粉丝 <b>12.4万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="阿霓">作者信息</button></div>
+          </div>
+        </article>
+
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#34e0b0,#5ac8fa);">灰</span>
+          <div>
+            <div class="clr-author-name">灰调工作室</div>
+            <div class="clr-author-field">擅长领域 · 低饱和 / 可访问性</div>
+            <p class="clr-author-bio">一个专注低饱和视觉与可访问性的双人小组，长期研究带颜色的网站在真实阅读场景下的表现。内容偏理性，常拿出对比度数据与测试截图，是很多品牌方收藏的参考来源。</p>
+            <div class="clr-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>8.7万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="灰调工作室">作者信息</button></div>
+          </div>
+        </article>
+
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#a78bfa,#5ac8fa);">林</span>
+          <div>
+            <div class="clr-author-name">林三原</div>
+            <div class="clr-author-field">擅长领域 · 前端实现 / 渐变动效</div>
+            <p class="clr-author-bio">前端工程师出身的设计博主，擅长把配色方案落成可运行的页面。他的教程总带着可复制的代码片段与色值文件，强调“能上线的配色才是好配色”，在开发者社区里口碑很好。</p>
+            <div class="clr-author-nums"><span>作品 <b>53</b></span><span>粉丝 <b>9.6万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="林三原">作者信息</button></div>
+          </div>
+        </article>
+
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#ffd166,#ff8a5c);">青</span>
+          <div>
+            <div class="clr-author-name">青提访谈</div>
+            <div class="clr-author-field">擅长领域 · 人物访谈 / 品牌故事</div>
+            <p class="clr-author-bio">以访谈见长的内容创作者，关注设计师与主理人做决定的过程。她相信颜色的选择背后都是人的选择，因此她的视频更慢、更长，但常被观众称作“看完想认真做设计”的那种内容。</p>
+            <div class="clr-author-nums"><span>作品 <b>29</b></span><span>粉丝 <b>6.2万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="青提访谈">作者信息</button></div>
+          </div>
+        </article>
+
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#5ac8fa,#34e0b0);">陆</span>
+          <div>
+            <div class="clr-author-name">陆行光</div>
+            <div class="clr-author-field">擅长领域 · 城市色彩 / 街头采集</div>
+            <p class="clr-author-bio">独立摄影师与城市观察者，长期拍摄老街招牌与建筑色彩。他把带颜色的网站看作城市颜色的一种延伸，视频画面质感强，常附取色点位与现场色卡，适合找灵感时慢慢看。</p>
+            <div class="clr-author-nums"><span>作品 <b>36</b></span><span>粉丝 <b>7.9万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="陆行光">作者信息</button></div>
+          </div>
+        </article>
+
+        <article class="clr-author">
+          <span class="clr-avatar" style="background:linear-gradient(135deg,#ff8a5c,#a78bfa);">开</span>
+          <div>
+            <div class="clr-author-name">开物实验室</div>
+            <div class="clr-author-field">擅长领域 · 色彩科学 / 行业观察</div>
+            <p class="clr-author-bio">由视觉研究员组成的实验室账号，关注色彩心理学与行业趋势。内容偏深度，常以数据图表和实验对照呈现，帮助品牌方在感性的颜色决策之外找到理性依据。</p>
+            <div class="clr-author-nums"><span>作品 <b>22</b></span><span>粉丝 <b>5.4万</b></span></div>
+            <div class="clr-actions-row"><button class="clr-mini-btn" type="button" data-clr-action="author" data-clr-name="开物实验室">作者信息</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 关键词解析 / 深度解析 ========== -->
+  <section class="clr-section" id="clr-essay" aria-labelledby="clr-essay-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Insight · 深度解析</span>
+        <h2 class="clr-h2" id="clr-essay-title">为什么我们需要更多<em>带颜色的网站</em></h2>
+        <p class="clr-sub">这不是一篇只谈美感的文章。我们想认真回答一个问题：当颜色成为网站的核心语言时，品牌、内容与用户之间到底发生了什么。</p>
+      </div>
+      <div class="clr-essay">
+        <div class="clr-essay-body">
+          <h3 class="clr-h3">一、颜色不是装饰，是信息结构的一部分</h3>
+          <p>很多团队在做网站时，习惯先定版式再补颜色，结果颜色沦为最后的“美化步骤”。但在我们拆解的 186 个带颜色的网站案例里，真正耐看的站点几乎都有一个共同点：颜色先于布局参与信息组织。主色负责建立第一印象，强调色负责引导路径，背景色负责划分层级，三种角色各司其职。一旦角色混乱，页面就会显得热闹却没有重点。比如一个以珊瑚粉为主色的品牌站，如果按钮、标签、链接全都使用同一饱和度，用户视线会失去落点；而当强调色被压缩到只用于“下一步”动作时，同样的颜色反而更有力量。</p>
+          <p>从内容运营角度看，颜色也是栏目化的工具。色彩灵感在规划专题时，会给每个长期专题分配一个稳定的辅助色：霓虹色谱对应珊瑚粉，低饱和留白对应薄荷绿，地域色彩对应琥珀黄。颜色稳定之后，用户即使不看标题，也能凭视觉判断自己进入了哪个内容区域。这种“颜色即栏目”的做法，让带颜色的网站在信息密度较高时依然保持清晰。</p>
+
+          <h3 class="clr-h3">二、高饱和与低饱和，选择的是品牌性格</h3>
+          <p>高饱和配色自带传播力。它在首屏、活动页和社交媒体缩略图中更容易被记住，适合需要快速建立认知的新品牌。但高饱和也是把双刃剑：大面积使用会挤压文字呼吸感，在移动端尤其明显。我们的建议是，把高饱和色用在“面积小、频率高”的位置，比如图标、按钮、进度条与数据强调，而不是整屏铺满。相对地，低饱和配色更适合内容阅读场景，它让文字成为主角，页面显得克制、可信、长期耐看。</p>
+          <p>低饱和的难点在于避免“灰得没有性格”。解决办法是保留一个饱和度略高的点睛色，并让它承担明确的交互职责。我们在几个家居品牌的带颜色的网站案例中看到，米白背景、浅灰分区、深墨绿按钮的组合既保持了安静，又让购买路径清晰。这里的关键不是颜色本身，而是颜色之间的比例关系。很多创作者在视频里会把这种比例做成可视化色块，观众一眼就能看懂。</p>
+
+          <h3 class="clr-h3">三、可访问性是带颜色的网站必须跨过的门槛</h3>
+          <p>漂亮的颜色如果没有可读性支撑，就只是截图素材。我们一直强调：正文与背景的对比度、图标与底色的区分度、状态色（成功、警告、错误）的可辨识度，是带颜色的网站必须检查的三项指标。现实中常见的问题是，品牌方为了保留主色，把浅色文字放在中饱和背景上，结果在户外或低亮度屏幕上几乎无法辨认。更稳妥的做法是建立“颜色令牌”：正文色、次级文字色、禁用色、强调色各自固定，并规定它们只能以特定组合出现。</p>
+          <p>这也是我们持续做对比度实测视频的原因。带颜色的网站不是不能大胆，而是大胆之后要有兜底方案。比如深色背景站点，可以用一层半透明蒙版保证文字区域对比度，同时让主视觉颜色透出来；再比如彩色卡片内的文字，优先用白色或近白色，并控制卡片颜色亮度上限。把这些规则写进设计系统，颜色才真正具备可运营性。</p>
+
+          <h3 class="clr-h3">四、从灵感展示到持续运营，内容生态才是长期答案</h3>
+          <p>推荐几个带颜色的网站，很容易变成一次性的灵感清单。但我们更关心的是：用户看完之后能不能用、愿不愿意回来。因此色彩灵感在内容结构上做了三层设计。第一层是案例视频，负责快速激发兴趣；第二层是专题企划，负责把同方向的案例持续积累，让带颜色的网站形成可比较的样本库；第三层是创作者访谈与深度解析，负责讲清楚决策逻辑。三层内容互相引用，用户可以从一条视频进入一个专题，再从一个专题认识一位创作者，最终留下来成为社区的一部分。</p>
+          <p>这也是我们坚持原创、正版与高清的原因。视频里的每一帧取色演示都基于真实项目授权素材，色值经过校对，避免误导观众。作为一家深耕配色垂直领域的视频品牌，我们相信真正的行业领先不是案例数量最多，而是每一条内容都值得信赖、可被复用。带颜色的网站会不断出现新的风格，但清晰的信息结构、可信的方法论与稳定的创作者关系，才是内容生态长期生长的土壤。未来我们还会开放投稿与比赛通道，让更多真实项目进入这个样本库，让颜色这件事被更多人认真对待。</p>
+        </div>
+        <aside class="clr-essay-aside" aria-label="配色方法论速览">
+          <h3>本页方法论速览</h3>
+          <ul>
+            <li><b>颜色角色三分法</b>：主色建立印象、强调色引导动作、背景色划分层级。</li>
+            <li><b>高饱和使用面积</b>：控制在单屏 15% 以内，优先用于可点击元素。</li>
+            <li><b>低饱和点睛色</b>：保留一个饱和度略高的颜色，专门承担交互职责。</li>
+            <li><b>对比度兜底</b>：彩色区域文字用白色或近白色，深色站点加半透明蒙版。</li>
+            <li><b>颜色即栏目</b>：为长期专题分配稳定辅助色，降低用户认知成本。</li>
+            <li><b>可复用交付</b>：每个案例附色值文件与对比度记录，方便团队落地。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== S6 用户评价 ========== -->
+  <section class="clr-section" id="clr-comments" aria-labelledby="clr-comments-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Voices · 社区口碑</span>
+        <h2 class="clr-h2" id="clr-comments-title">来自<em>带颜色的网站</em>观众的真实反馈</h2>
+        <p class="clr-sub">有人在这里找到项目方向，有人只是喜欢看颜色。以下评价均来自平台注册用户的公开留言。</p>
+      </div>
+      <div class="clr-comments">
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#ff5c7a,#ffd166);">苏</span>
+            <div><div class="clr-comment-name">苏打水不加冰</div><div class="clr-comment-time">11 月 18 日</div></div>
+          </div>
+          <p class="clr-comment-text">做品牌官网改版时几乎把「霓虹色谱」专题刷完了，最后真的按里面讲的颜色角色三分法重排了按钮，甲方第一次没让我改配色。这种能直接落地的推荐太少了。</p>
+          <div class="clr-comment-stars">★★★★★</div>
+        </article>
+
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#34e0b0,#5ac8fa);">M</span>
+            <div><div class="clr-comment-name">Momo 在画画</div><div class="clr-comment-time">11 月 16 日</div></div>
+          </div>
+          <p class="clr-comment-text">画面舒服，节奏不吵。带颜色的网站这个选题本来很容易做成拼贴合集，但这里每条都有结论，适合当背景音慢慢听。</p>
+          <div class="clr-comment-stars">★★★★☆</div>
+        </article>
+
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#a78bfa,#5ac8fa);">陈</span>
+            <div><div class="clr-comment-name">陈工看前端</div><div class="clr-comment-time">11 月 15 日</div></div>
+          </div>
+          <p class="clr-comment-text">作为前端，最喜欢林三原的视频。配色方案直接给色值文件，还标注了对比度，复制到项目里基本不用二次调整，省了很多来回沟通。</p>
+          <div class="clr-comment-stars">★★★★★</div>
+        </article>
+
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#ffd166,#ff8a5c);">一</span>
+            <div><div class="clr-comment-name">一只小满</div><div class="clr-comment-time">11 月 13 日</div></div>
+          </div>
+          <p class="clr-comment-text">低饱和那一期看得我立刻去改了自己的作品集背景，原来不是颜色越淡越高级，是层级没做好。希望多出一点个人作品集方向的带颜色的网站参考。</p>
+          <div class="clr-comment-stars">★★★★☆</div>
+        </article>
+
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#5ac8fa,#34e0b0);">大</span>
+            <div><div class="clr-comment-name">大橘设计日记</div><div class="clr-comment-time">11 月 11 日</div></div>
+          </div>
+          <p class="clr-comment-text">平台整体很干净，广告克制，专题结构也舒服。唯一想提的是希望案例库能按色系筛选，比如直接找珊瑚粉或薄荷绿，找灵感时会更高效。</p>
+          <div class="clr-comment-stars">★★★★☆</div>
+        </article>
+
+        <article class="clr-comment">
+          <div class="clr-comment-head">
+            <span class="clr-comment-avatar" style="background:linear-gradient(135deg,#ff8a5c,#a78bfa);">小</span>
+            <div><div class="clr-comment-name">小岛来信</div><div class="clr-comment-time">11 月 9 日</div></div>
+          </div>
+          <p class="clr-comment-text">不是设计师，只是喜欢看好看的网站。这里讲得不难懂，颜色为什么这样配也能听明白，算是意外收获。</p>
+          <div class="clr-comment-stars">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== S7 辅助区：合作 + FAQ + 联系 ========== -->
+  <section class="clr-section" id="clr-faq" aria-labelledby="clr-faq-title">
+    <div class="clr-container">
+      <div class="clr-section-head">
+        <span class="clr-eyebrow">Support · 帮助与伙伴</span>
+        <h2 class="clr-h2" id="clr-faq-title">关于<em>带颜色的网站</em>的常见问题</h2>
+        <p class="clr-sub">如果你刚接触色彩灵感，下面这些问题可能正好能帮到你。也欢迎通过页面底部的联系入口找到我们。</p>
+      </div>
+
+      <div class="clr-faq">
+        <details open>
+          <summary>平台主要推荐哪一类带颜色的网站？</summary>
+          <p>我们覆盖品牌官网、作品集、活动页、电商与内容社区等多种类型，重点看配色是否有明确的信息结构，而不是单纯看颜色是否鲜艳。每条视频都会说明案例类型与适用场景。</p>
+        </details>
+        <details>
+          <summary>视频里的色值可以直接商用吗？</summary>
+          <p>色值本身是公共信息，可以自由参考与使用；但案例页面的版式、图片与素材受原作者版权保护。我们会在视频中标注素材来源，建议商用前自行确认授权范围，这也是平台坚持正版与原创的原因。</p>
+        </details>
+        <details>
+          <summary>如何向「色彩灵感」投稿？</summary>
+          <p>点击页面右上角的“投稿”按钮即可填写主题、作者与内容说明。我们优先收录真实项目拆解、有明确方法论的带颜色的网站案例，审核周期通常为五个工作日。</p>
+        </details>
+        <details>
+          <summary>创作者入驻有什么要求？</summary>
+          <p>我们更看重持续更新能力与内容真实性。通常需要提交至少三条过往作品，说明擅长的方向与更新计划。入驻后可以获得专题联合策划、色值文件模板与社区推荐位等支持。</p>
+        </details>
+        <details>
+          <summary>专题企划会长期更新吗？</summary>
+          <p>会。霓虹色谱与低饱和留白两个专题已经稳定更新超过一年，地域色彩专题也在筹备中。我们采用固定节奏更新，确保每个专题都能积累成可比较的样本库。</p>
+        </details>
+        <details>
+          <summary>页面上的点赞和收藏会保存吗？</summary>
+          <p>当前版本使用本地状态记录你的操作，刷新后部分状态会重置。我们正在评估加入账号体系，让收藏与观看记录可以跨设备同步。</p>
+        </details>
+      </div>
+
+      <div class="clr-partners" style="margin-top:36px;" aria-label="合作品牌">
+        <div class="clr-partner"><b>拾光设计周</b><span>年度合作 · 视觉展映</span></div>
+        <div class="clr-partner"><b>纸间印刷</b><span>色卡印制合作</span></div>
+        <div class="clr-partner"><b>南岸书店</b><span>线下放映伙伴</span></div>
+        <div class="clr-partner"><b>三原色学院</b><span>课程内容共建</span></div>
+        <div class="clr-partner"><b>城市观察所</b><span>地域色彩联合企划</span></div>
+      </div>
+
+      <div class="clr-contact-bar" id="clr-contact">
+        <div>
+          <h3 class="clr-h3" style="margin-bottom:4px;">投稿、合作或只是聊聊颜色</h3>
+          <p class="clr-sub" style="font-size:.83rem;">我们重视每一条来自社区的声音，也会认真阅读带颜色的网站相关反馈。</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="clr-btn clr-btn-primary" type="button" id="clr-submit-open-2">我要投稿</button>
+          <button class="clr-mini-btn" type="button" data-clr-action="copy" style="padding:9px 18px;">复制链接</button>
+          <button class="clr-mini-btn" type="button" data-clr-action="report" style="padding:9px 18px;">反馈建议</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========== S8 页脚 ========== -->
+<footer class="clr-footer">
+  <div class="clr-container">
+    <div class="clr-footer-grid">
+      <div class="clr-footer-brand">
+        <a class="clr-logo" href="#clr-hero" aria-label="返回色彩灵感官网首页">
+          <span class="clr-logo-mark">
+            <svg viewBox="0 0 64 64" width="34" height="34" role="img" aria-label="色彩灵感页脚品牌标识">
+              <rect width="64" height="64" rx="14" fill="#1c2330"/>
+              <circle cx="22" cy="24" r="10" fill="#ff5c7a"/>
+              <circle cx="42" cy="24" r="10" fill="#34e0b0"/>
+              <circle cx="32" cy="42" r="10" fill="#ffd166"/>
+            </svg>
+          </span>
+          <span class="clr-logo-text">色彩灵感<small>COLOR INSPIRE</small></span>
+        </a>
+        <p>色彩灵感官方网站，专注带颜色的网站案例与配色方法论的视频内容平台。我们坚持原创、正版与高清，持续运营值得信赖的设计内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#clr-videos">焦点视频</a></li>
+          <li><a href="#clr-topics">专题企划</a></li>
+          <li><a href="#clr-essay">深度解析</a></li>
+          <li><a href="#clr-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#clr-comments">社区口碑</a></li>
+          <li><a href="#clr-faq">帮助中心</a></li>
+          <li><a href="#clr-contact">投稿入口</a></li>
+          <li><a href="#clr-contact">合作联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方</h4>
+        <ul>
+          <li>官方发布 · 每周三更新</li>
+          <li>企业动态 · 持续运营中</li>
+          <li>内容合作 · 品牌共建</li>
+          <li>用户至上 · 反馈必读</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clr-footer-bottom">
+      <span>© 2026 色彩灵感官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：色彩灵感备 20261122 号 · 品牌内容请以官方发布为准</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== 浮动与反馈 ========== -->
+<button class="clr-to-top" id="clr-to-top" type="button" aria-label="回到顶部">↑</button>
+<div class="clr-toast" id="clr-toast" role="status" aria-live="polite"></div>
+
+<div class="clr-modal-mask" id="clr-modal-mask" aria-hidden="true">
+  <div class="clr-modal" role="dialog" aria-modal="true" aria-labelledby="clr-modal-title">
+    <button class="clr-modal-close" id="clr-modal-close" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="clr-modal-title">投稿到色彩灵感</h3>
+    <p id="clr-modal-desc">分享你发现的带颜色的网站或原创配色项目。留下联系方式，编辑会在五个工作日内回复。</p>
+    <form id="clr-submit-form">
+      <label for="clr-form-topic">内容主题</label>
+      <input id="clr-form-topic" type="text" placeholder="例如：低饱和品牌官网改版记录" required>
+      <label for="clr-form-contact">联系方式</label>
+      <input id="clr-form-contact" type="text" placeholder="邮箱或社交账号" required>
+      <label for="clr-form-note">补充说明</label>
+      <textarea id="clr-form-note" rows="3" placeholder="简要描述内容方向与可提供的素材"></textarea>
+      <button class="clr-btn clr-btn-primary" type="submit" style="width:100%;">提交投稿</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('clr-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var navToggle = document.getElementById('clr-nav-toggle');
+  var mobileNav = document.getElementById('clr-mobile-nav');
+  if(navToggle && mobileNav){
+    navToggle.addEventListener('click', function(){
+      var isOpen = mobileNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mobileNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* 搜索前端反馈 */
+  var searchInput = document.getElementById('clr-search-input');
+  if(searchInput){
+    var searchTimer = null;
+    searchInput.addEventListener('input', function(){
+      clearTimeout(searchTimer);
+      var kw = searchInput.value.trim();
+      if(!kw){ toast.classList.remove('show'); return; }
+      searchTimer = setTimeout(function(){
+        showToast('正在搜索「' + kw + '」相关带颜色的网站案例');
+      }, 420);
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        var kw = searchInput.value.trim();
+        showToast(kw ? '已为你筛选「' + kw + '」相关内容' : '请输入关键词后再搜索');
+      }
+    });
+  }
+
+  /* 点赞 / 收藏 / 复制 / 评论等 */
+  var likedMap = {};
+  var savedMap = {};
+
+  function findLikeCount(btn){
+    var parent = btn.closest('.clr-video-feature-body') || btn.closest('.clr-video-item') || btn.parentElement;
+    if(!parent) return null;
+    return parent.querySelector('[data-clr-count]');
+  }
+
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-clr-action]');
+    if(!btn) return;
+    var action = btn.getAttribute('data-clr-action');
+
+    if(action === 'like'){
+      var key = btn.getAttribute('data-clr-key') || ('like-' + (btn.dataset.idx || Math.random()));
+      if(!btn.dataset.idx){
+        btn.dataset.idx = String(Math.floor(Math.random()*1e9));
+        key = 'like-' + btn.dataset.idx;
+      }
+      var countEl = findLikeCount(btn);
+      var isLiked = !!likedMap[key];
+      if(countEl){
+        var base = parseInt(countEl.getAttribute('data-clr-base') || countEl.textContent.replace(/[^\d]/g,''), 10) || 0;
+        if(!countEl.getAttribute('data-clr-base')) countEl.setAttribute('data-clr-base', String(base));
+        var next = isLiked ? base - 1 : base + 1;
+        countEl.textContent = String(Math.max(0, next));
+      }
+      likedMap[key] = !isLiked;
+      btn.classList.toggle('is-active', !isLiked);
+      btn.innerHTML = (!isLiked ? '♥ 已赞' : '♡ 点赞') + (countEl ? ' <span data-clr-count="' + countEl.textContent + '">' + countEl.textContent + '</span>' : '');
+      showToast(!isLiked ? '感谢点赞，已记录你的支持' : '已取消点赞');
+    }
+
+    if(action === 'save'){
+      var skey = btn.getAttribute('data-clr-key') || ('save-' + (btn.dataset.idx || (btn.dataset.idx = String(Math.floor(Math.random()*1e9)))));
+      var isSaved = !!savedMap[skey];
+      savedMap[skey] = !isSaved;
+      btn.classList.toggle('is-saved', !isSaved);
+      btn.textContent = !isSaved ? '★ 已收藏' : '☆ 收藏';
+      showToast(!isSaved ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    }
+
+    if(action === 'copy'){
+      var linkText = '色彩灵感 · 带颜色的网站视频专题';
+      function fallbackCopy(){
+        try{
+          var ta = document.createElement('textarea');
+          ta.value = linkText;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast('链接已复制，欢迎分享给朋友');
+        }catch(err){
+          showToast('复制失败，请手动选择内容分享');
+        }
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(linkText).then(function(){
+          showToast('链接已复制，欢迎分享给朋友');
+        }).catch(fallbackCopy);
+      }else{
+        fallbackCopy();
+      }
+    }
+
+    if(action === 'comment'){
+      showToast('评论区已展开，向下滚动即可参与讨论');
+      var target = document.getElementById('clr-comments');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
+    if(action === 'author'){
+      var name = btn.getAttribute('data-clr-name') || '创作者';
+      openModal('关于创作者 · ' + name, '这位创作者长期参与色彩灵感的内容共建，持续输出带颜色的网站案例与配色方法。完整作品列表与更新计划可在创作者主页查看，欢迎关注并参与评论互动。', false);
+    }
+
+    if(action === 'report'){
+      openModal('反馈建议', '如果你发现内容问题或有改进建议，欢迎通过投稿入口留言。我们坚持用户至上，每条反馈都会进入审核流程，并在企业动态中同步处理进展。', false);
+    }
+
+    if(action === 'topic'){
+      showToast('专题目录正在整理，官方发布后将第一时间通知你');
+    }
+  });
+
+  /* 弹窗 */
+  var mask = document.getElementById('clr-modal-mask');
+  var modalTitle = document.getElementById('clr-modal-title');
+  var modalDesc = document.getElementById('clr-modal-desc');
+  var modalForm = document.getElementById('clr-submit-form');
+  var lastFocus = null;
+
+  function openModal(title, desc, showForm){
+    if(!mask) return;
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    if(modalForm) modalForm.style.display = showForm ? 'block' : 'none';
+    mask.classList.add('open');
+    mask.setAttribute('aria-hidden', 'false');
+    var closeBtn = document.getElementById('clr-modal-close');
+    if(closeBtn) closeBtn.focus();
+  }
+
+  function closeModal(){
+    if(!mask) return;
+    mask.classList.remove('open');
+    mask.setAttribute('aria-hidden', 'true');
+    if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+
+  document.getElementById('clr-modal-close').addEventListener('click', closeModal);
+  if(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeModal();
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mask && mask.classList.contains('open')) closeModal();
+  });
+
+  var submitBtn1 = document.getElementById('clr-submit-open');
+  var submitBtn2 = document.getElementById('clr-submit-open-2');
+  function openSubmit(){
+    openModal('投稿到色彩灵感', '分享你发现的带颜色的网站或原创配色项目。留下联系方式，编辑会在五个工作日内回复。', true);
+  }
+  if(submitBtn1) submitBtn1.addEventListener('click', openSubmit);
+  if(submitBtn2) submitBtn2.addEventListener('click', openSubmit);
+
+  if(modalForm){
+    modalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var topic = document.getElementById('clr-form-topic');
+      var contact = document.getElementById('clr-form-contact');
+      if(topic && !topic.value.trim()){ showToast('请先填写内容主题'); topic.focus(); return; }
+      if(contact && !contact.value.trim()){ showToast('请留下联系方式，方便编辑回复'); contact.focus(); return; }
+      showToast('投稿已提交，感谢你的参与');
+      modalForm.reset();
+      closeModal();
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('clr-to-top');
+  if(toTop){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 480){ toTop.classList.add('show'); }
+      else{ toTop.classList.remove('show'); }
+    }, {passive:true});
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 数字滚动 (首屏数据) */
+  var statNums = document.querySelectorAll('.clr-stat b');
+  var statDone = false;
+  function animateStats(){
+    if(statDone) return;
+    var rect = document.querySelector('.clr-hero-stats');
+    if(!rect) return;
+    var r = rect.getBoundingClientRect();
+    if(r.top < window.innerHeight - 60){
+      statDone = true;
+      statNums.forEach(function(el){
+        var raw = el.textContent.trim();
+        var match = raw.match(/^(\d+)(.*)$/);
+        if(!match) return;
+        var target = parseInt(match[1], 10);
+        var suffix = match[2] || '';
+        var cur = 0;
+        var step = Math.max(1, Math.ceil(target / 40));
+        var timer = setInterval(function(){
+          cur += step;
+          if(cur >= target){ cur = target; clearInterval(timer); }
+          el.textContent = cur + suffix;
+        }, 30);
+      });
+    }
+  }
+  window.addEventListener('scroll', animateStats, {passive:true});
+  animateStats();
+})();
+</script>
+</body>
+  </html>
